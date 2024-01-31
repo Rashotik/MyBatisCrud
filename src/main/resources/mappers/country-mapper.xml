@@ -1,0 +1,11 @@
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.YandexTest.mapper.CountryMapper">
+    <select id="getCountryById"
+    parameterType="java.lang.Integer">
+        select * from country where id = #{id}
+    </select>
+
+    <select id="getCountry">
+        select * from country
+    </select>
+</mapper>

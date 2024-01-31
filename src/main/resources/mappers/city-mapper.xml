@@ -1,0 +1,24 @@
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.YandexTest.mapper.CityMapper">
+    <resultMap id="cityMap" type="com.example.YandexTest.entity.City">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+        <collection
+                property="streets"
+                column="city_id"
+                javaType="com.example.YandexTest.entity.Street"
+                select="com.example.YandexTest.mapper.StreetMapper.getByCityId"
+                fetchType="eager" />
+    </resultMap>
+    <select id="getById"
+    parameterType="java.lang.Integer" resultMap="city">
+        select * from city where id = #{id}
+    </select>
+
+    <select id="getAll" resultMap="city">
+        select * from city
+    </select>
+    <insert id="create" keyColumn="id">
+        insert into city ()
+    </insert>
+</mapper>

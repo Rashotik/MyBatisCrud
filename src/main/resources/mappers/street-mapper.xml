@@ -1,0 +1,15 @@
+<!DOCTYPE mapper     PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.YandexTest.mapper.StreetMapper">
+    <resultMap id="streetMap" type="com.example.YandexTest.entity.Street">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+    </resultMap>
+    <select id="findById"
+    parameterType="java.lang.Integer">
+        select * from street where id = #{id}
+    </select>
+
+    <select id="getStreet">
+        select * from street
+    </select>
+</mapper>
