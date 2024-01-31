@@ -9,9 +9,9 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Setter
 public abstract class AbstractService<E extends AbstractEntity, D extends AbstractDto> {
 
-	@Setter
 	protected SqlSession session;
 
 	protected abstract CommonMapper<E, D> getDaoMapperClass();

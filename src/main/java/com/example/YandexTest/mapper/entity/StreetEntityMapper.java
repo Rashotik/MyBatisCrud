@@ -1,8 +1,6 @@
 package com.example.YandexTest.mapper.entity;
 
-import com.example.YandexTest.dto.CityDto;
 import com.example.YandexTest.dto.StreetDto;
-import com.example.YandexTest.entity.City;
 import com.example.YandexTest.entity.Street;
 import org.springframework.stereotype.Service;
 

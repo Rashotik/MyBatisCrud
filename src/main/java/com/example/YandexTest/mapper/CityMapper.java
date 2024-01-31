@@ -1,9 +1,7 @@
 package com.example.YandexTest.mapper;
 
 import com.example.YandexTest.dto.CityDto;
-import com.example.YandexTest.dto.StreetDto;
 import com.example.YandexTest.entity.City;
-import com.example.YandexTest.entity.Street;
 import org.apache.ibatis.annotations.*;
 import org.apache.ibatis.mapping.FetchType;
 import org.apache.ibatis.type.JdbcType;

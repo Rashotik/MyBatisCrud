@@ -1,10 +1,7 @@
 package com.example.YandexTest.mapper.entity;
 
-import com.example.YandexTest.dto.CityDto;
 import com.example.YandexTest.dto.CountryDto;
-import com.example.YandexTest.entity.City;
 import com.example.YandexTest.entity.Country;
-import com.example.YandexTest.mapper.CityMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

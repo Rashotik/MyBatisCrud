@@ -18,7 +18,7 @@ public class MyBatisConfig {
     public DataSource dataSource() {
         return new EmbeddedDatabaseBuilder()
               .setType(EmbeddedDatabaseType.H2)
-              .addScript("V1_1__test_data.sql")
+              .addScript("testData.sql")
               .build();
     }
 

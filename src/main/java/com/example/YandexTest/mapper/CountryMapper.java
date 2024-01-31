@@ -24,7 +24,7 @@ public interface CountryMapper extends CommonMapper<Country, CountryDto>{
     @Insert("insert into country (id, name) values (nextval('country_seq'), #{name})")
     void create(CountryDto dto);
 
-    @Update("update country set name = #{name}")
+    @Update("update country set name = #{name} where id = #{id}")
     void update(CountryDto dto);
 
     @Delete("delete from country where id = #{id}")
